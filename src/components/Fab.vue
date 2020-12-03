@@ -2,10 +2,10 @@
 <template>
   <div>
     <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-fab v-model="fab" vertical-actions-align="right" color="primary" glossy icon="keyboard_arrow_up" direction="up" >
+      <q-fab v-model="fab" vertical-actions-align="right" color="primary" glossy icon="mdi-plus" direction="up" >
         <q-fab-action label-position="left" color="positive" @click="add_new_category_modal()" icon="mdi-sort" label="New Category" />
         <!-- <q-fab-action label-position="left" color="secondary" @click="add_new_note_modal()" icon="mdi-pencil-plus-outline" label="Notes" /> -->
-        <q-fab-action label-position="left" color="primary" @click="add_new_task_modal()" icon="mdi-account-hard-hat" label="Task" />
+        <q-fab-action label-position="left" color="primary" @click="add_new_task_modal()" icon="mdi-account-hard-hat" label="New Task" />
       </q-fab>
     </q-page-sticky>
 

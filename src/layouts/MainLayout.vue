@@ -45,7 +45,7 @@
     width: 100%
   }
   .icon_img{
-    filter: drop-shadow(0 0 0.3rem #6ADCC3);
+    filter: drop-shadow(0 0 0.1rem #6ADCC3);
   }
   .dangle {
     animation: shimmy 2s infinite;
