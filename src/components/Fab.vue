@@ -39,7 +39,7 @@
               <template v-slot:append>
                 <q-icon name="access_time" class="cursor-pointer">
                   <q-popup-proxy transition-show="scale" transition-hide="scale">
-                    <q-time v-model="newTaskDetails.date" mask="YYYY-MM-DD HH:mm" format24h>
+                    <q-time v-model="newTaskDetails.date" mask="YYYY-MM-DD HH:mm" format24h label="lol">
                       <div class="row items-center justify-end">
                         <q-btn v-close-popup label="Close" color="primary" flat />
                       </div>
@@ -185,7 +185,7 @@ export default {
         _.ADD_TASK(configuredTask)
         _.server_add_task_btn = false
         _.newTaskDetails = {}
-        _.newTaskDetails.date = 'Tap icons to set Date & Time'
+        // _.newTaskDetails.date = 'Tap icons to set Date & Time'
         _.category_id = ''
         _.selectedCategory = ''
       }, 300)
