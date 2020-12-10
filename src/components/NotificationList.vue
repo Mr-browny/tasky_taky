@@ -123,6 +123,7 @@ export default {
     complete_task (id) {
       const _ = this
       _.COMPLETE_TASK(id)
+      _.singleTaskDetails = false
     }
   }
 }

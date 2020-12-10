@@ -26,7 +26,6 @@ export function getNotifications (state) {
   // Na the return dey cause this red error thingy
   state.tasks.filter(task => {
     if (task.status === 'Pending' && moment(task.date).diff(moment(today), 'days') + 1 === 1) {
-    // if (moment(task.date).diff(moment(today), 'days') + 1 === 1) {
       arr.push(task)
     }
   })

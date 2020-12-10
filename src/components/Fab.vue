@@ -162,7 +162,10 @@ export default {
     ...mapActions('user', ['ADD_CATEGORY']),
     add_new_task_modal () {
       const _ = this
-      _.getCategory.forEach(cat => _.categoryOptions.push(cat.name))
+      _.categoryOptions = []
+      _.getCategory.forEach(cat => {
+        _.categoryOptions.push(cat.name)
+      })
       _.newTask = !_.newTask
     },
     add_new_task () {

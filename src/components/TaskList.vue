@@ -195,10 +195,13 @@ export default {
     viewTaskDetails (id) {
       const _ = this
       _.singleTaskDetails = true
+      _.categoryOptions = []
       _.getTasks.filter(task => {
         if (task.id === id) {
           _.task_details = task
-          _.getCategory.forEach(cat => _.categoryOptions.push(cat.name))
+          _.getCategory.forEach(cat => {
+            _.categoryOptions.push(cat.name)
+          })
           _.editTaskDetails.name = task.name
           _.editTaskDetails.additional_info = task.additional_info
           _.editTaskDetails.date = task.date
